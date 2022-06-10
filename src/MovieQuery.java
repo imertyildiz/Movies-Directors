@@ -124,9 +124,4 @@ public class MovieQuery {
         String[] fields = line.split(",");
         return new Movie(fields[0], Long.parseLong(fields[1]), new ArrayList<>(List.of(fields[2].split(";"))), Long.parseLong(fields[3]), Double.parseDouble(fields[4]), Long.parseLong(fields[5]), fields[6], fields[7], Double.parseDouble(fields[8]));
     }
-
-
-    public static void main(String[] args) {
-        MovieQuery.queryAll("imdb3", "result");
-    }
 }
