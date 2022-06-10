@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+// Class of Movies for storing them into a object.
 public class Movie {
     private String title;
     private Long year;
@@ -93,13 +94,5 @@ public class Movie {
 
     public void setGross(Double gross) {
         this.gross = gross;
-    }
-    @Override
-    public String toString() {
-        return "Movie{" +
-                "title=" + year +
-                ", year='" + year + '\'' +
-                ", genre='" + genre + '\'' +
-                '}';
     }
 }
